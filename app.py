@@ -25,6 +25,10 @@ if "dialogue_history" not in st.session_state:
 if "deviation_history" not in st.session_state:
     st.session_state.deviation_history = []
 
+# ターン調整記録
+if "advance_turn_history" not in st.session_state:
+    st.session_state.advance_turn_history = []
+
 # CC-immediate記録
 if "cc_immediate_answers" not in st.session_state:
     st.session_state.cc_immediate_answers = {}

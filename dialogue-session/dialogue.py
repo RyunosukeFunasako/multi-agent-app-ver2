@@ -345,6 +345,7 @@ if st.session_state.current_page == "dialogue":
             else:
                 print("ターンを進めない")
 
+            st.session_state.advance_turn_history.append({"turn": st.session_state.counselor_turn, "患者の発話": previous_user_reply, "judge": judge_result})
             print(f"現在のターン：{st.session_state.counselor_turn}")
             st.session_state.speaker = "counselor"
             st.rerun()

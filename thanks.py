@@ -17,6 +17,7 @@ result_data = {
     "qids": st.session_state.get("qids_answers", {}),
     "dialogue_history": st.session_state.get("dialogue_history", []),
     "deviation_history": st.session_state.get("deviation_history", []),
+    "advance_turn_history": st.session_state.get("advance_turn_history", []),
     "cc_immediate": st.session_state.get("cc_immediate_answers", {}),
     "rapport": st.session_state.get("rapport_answers", {}),
     "quality": st.session_state.get("quality_answers", {}),
